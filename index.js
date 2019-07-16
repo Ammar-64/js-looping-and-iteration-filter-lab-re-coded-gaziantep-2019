@@ -6,3 +6,6 @@ function findMatching(drivers, match){
 function fuzzyMatch(drivers, match){
   return drivers.filter(driver => driver.slice(0,2).includes(match))
 }
+function matchName(drivers, match){
+  return drivers.filter(driver => driver.name === match)
+}
